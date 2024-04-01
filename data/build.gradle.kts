@@ -1,3 +1,5 @@
+import com.example.lookpin.primitive.implementation
+
 plugins {
     id("com.example.lookpin.primitive.android.library")
     id("com.example.lookpin.primitive.android.kotlin")
@@ -11,4 +13,5 @@ dependencies {
     implementation(projects.model)
     implementation(projects.data.local)
     implementation(projects.data.remote)
+    implementation(libs.kotlinx.collections.immutable)
 }
