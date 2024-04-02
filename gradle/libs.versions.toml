@@ -6,14 +6,14 @@ targetSdk = "34"
 
 # Gradle
 # [Document](https://developer.android.com/build/releases/gradle-plugin)
-android_gradle_plugin = "8.2.0"
+android_gradle_plugin = "8.2.2"
 
 # [REF Document](https://developer.android.com/jetpack/androidx/releases/compose-kotlin)
 
 # Kotlin
 # [Github](https://github.com/JetBrains/kotlin)
 # [Document](https://kotlinlang.org/docs/releases.html)
-kotlin = "1.9.20"
+kotlin = "1.9.22"
 # [Github](https://github.com/Kotlin/kotlinx.coroutines)
 kotlinx_coroutines = "1.7.3"
 # [Github](https://github.com/Kotlin/kotlinx.serialization)
@@ -23,7 +23,7 @@ kotlinx_collection = "0.3.5"
 # [Github](https://github.com/JakeWharton/retrofit2-kotlinx-serialization-converter)
 kotlin_serialization_converter = "1.0.0"
 # [Document](https://kotlinlang.org/docs/ksp-quickstart.html)
-kotlin_ksp = "1.9.20-1.0.14"
+kotlin_ksp = "1.9.21-1.0.16"
 
 # AndroidX
 # [Document](https://developer.android.com/jetpack/androidx/releases/core)
@@ -34,16 +34,16 @@ androidx_arch_core = "2.2.0"
 # [Document](https://developer.android.com/jetpack/androidx/releases/appcompat)
 androidx_appcompat = "1.6.1"
 # [Document](https://developer.android.com/jetpack/androidx/releases/activity)
-androidx_activity = "1.8.1"
+androidx_activity = "1.8.2"
 # [Document](https://developer.android.com/jetpack/androidx/releases/fragment)
 androidx_fragment = "1.6.2"
 # [Document](https://developer.android.com/jetpack/androidx/releases/lifecycle)
-androidx_lifecycle = "2.6.2"
+androidx_lifecycle = "2.7.0"
 # [Document](https://developer.android.com/jetpack/androidx/releases/navigation)
-androidx_navigation = "2.7.5"
+androidx_navigation = "2.7.7"
 # [Document](https://developer.android.com/jetpack/androidx/releases/compose)
 androidx_compose = "1.6.0-beta02"
-androidx_compose_compiler = "1.5.5"
+androidx_compose_compiler = "1.5.8"
 # [Document](https://developer.android.com/jetpack/androidx/releases/room)
 androidx_room = "2.6.1"
 # [Document](https://developer.android.com/jetpack/androidx/releases/datastore)
@@ -82,7 +82,7 @@ android_desugar_jdk_libs = "2.0.4"
 
 # Google
 # [Github](https://github.com/material-components/material-components-android/blob/master/docs/getting-started.md)
-material_components = "1.10.0"
+material_components = "1.11.0"
 # [Github](https://github.com/google/accompanist)
 accompanist = "0.32.0"
 # [Document](https://developers.google.com/android/guides/setup)
@@ -226,6 +226,8 @@ androidx-compose-ui-tooling = { group = "androidx.compose.ui", name = "ui-toolin
 androidx-compose-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview", version.ref = "androidx_compose" }
 androidx-compose-ui-util = { group = "androidx.compose.ui", name = "ui-util", version.ref = "androidx_compose" }
 androidx-compose-ui-viewbinding = { group = "androidx.compose.ui", name = "ui-viewbinding", version.ref = "androidx_compose" }
+androidx-navigation-fragment = { group = "androidx.navigation", name = "navigation-fragment-ktx", version.ref = "androidx_navigation" }
+androidx-navigation-ui = { group = "androidx.navigation", name = "navigation-ui-ktx", version.ref = "androidx_navigation" }
 
 android-install-referrer = { group = "com.android.installreferrer", name = "installreferrer", version.ref = "android_install_referrer" }
 android-play-core = { group = "com.google.android.play", name = "core", version.ref = "android_play_core" }
@@ -314,6 +316,7 @@ firebase-performance-gradlePlugin = { group = "com.google.firebase", name = "per
 hilt-android-gradlePlugin = { group = "com.google.dagger", name = "hilt-android-gradle-plugin", version.ref = "hilt" }
 protobuf-gradlePlugin = { group = "com.google.protobuf", name = "protobuf-gradle-plugin", version.ref = "protobuf_plugin" }
 ktlint-gradlePlugin = { group = "org.jlleitschuh.gradle", name = "ktlint-gradle", version.ref = "ktlint" }
+androidx-navigation-safe-args-gradlePlugin = { group = "androidx.navigation", name = "navigation-safe-args-gradle-plugin", version.ref = "androidx_navigation" }
 
 [bundles]
 compose-basic = [
@@ -354,6 +357,10 @@ datastore = [
     "androidx-datastore", "androidx-datastore-preferences", "protobuf-java",
 ]
 
+navigation = [
+    "androidx-navigation-fragment", "androidx-navigation-ui",
+]
+
 [plugins]
 android-application = { id = "com.android.application", version.ref = "android_gradle_plugin" }
 android-library = { id = "com.android.library", version.ref = "android_gradle_plugin" }
@@ -372,4 +379,4 @@ protobuf = { id = "com.google.protobuf", version.ref = "protobuf_plugin" }
 ktlint = { id = "org.jlleitschuh.gradle.ktlint", version.ref = "ktlint" }
 ktlint-idea = { id = "org.jlleitschuh.gradle.ktlint-idea", version.ref = "ktlint" }
 modulegraph = { id = "dev.iurysouza.modulegraph", version = "0.2.2" }
-
+navigation-safe-args = { id = "androidx.navigation.safeargs.kotlin", version.ref = "androidx_navigation" }

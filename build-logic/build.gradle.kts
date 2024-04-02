@@ -27,6 +27,7 @@ dependencies {
     implementation(libs.android.gradlePlugin)
     implementation(libs.hilt.android.gradlePlugin)
     implementation(libs.protobuf.gradlePlugin)
+    implementation(libs.androidx.navigation.safe.args.gradlePlugin)
 }
 
 gradlePlugin {
@@ -70,6 +71,12 @@ gradlePlugin {
         register("androidKotlinSymbolPlugin") {
             id = "com.example.lookpin.primitive.android.kotlin.ksp"
             implementationClass = "com.example.lookpin.primitive.AndroidKotlinSymbolPlugin"
+        }
+
+        // Navigation
+        register("androidNavigation") {
+            id = "com.example.lookpin.primitive.android.navigation"
+            implementationClass = "com.example.lookpin.primitive.AndroidNavigationPlugin"
         }
 
         // Conventions

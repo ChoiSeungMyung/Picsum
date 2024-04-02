@@ -1,10 +1,11 @@
 plugins {
     id("com.example.lookpin.primitive.android.library")
     id("com.example.lookpin.primitive.android.kotlin")
+
 }
 
-android.namespace = "com.example.lookpin.core.domain"
+android.namespace = "com.example.lookpin.core.navigation"
 
 dependencies {
-    implementation(libs.timber)
+    implementation(libs.bundles.navigation)
 }
