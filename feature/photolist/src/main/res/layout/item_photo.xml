@@ -8,7 +8,7 @@
 
         <variable
             name="photo"
-            type="com.example.lookpin.model.entity.Photo" />
+            type="com.example.lookpin.feature.photolist.model.PhotoUiModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -23,10 +23,11 @@
             android:scaleType="centerCrop"
             app:layout_constraintDimensionRatio="1"
             app:layout_constraintTop_toTopOf="parent"
-            bind:photo="@{photo.downloadUrl}"
+            bind:photo="@{photo.imageUrl}"
             tools:src="@tools:sample/avatars" />
 
         <CheckBox
+            android:id="@+id/check_box"
             android:layout_width="@dimen/checkbox_size"
             android:layout_height="@dimen/checkbox_size"
             android:layout_margin="@dimen/item_padding"

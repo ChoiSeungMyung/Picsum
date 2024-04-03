@@ -28,6 +28,7 @@ class DefaultPhotoRepository @Inject constructor(
     }
 
     override suspend fun refresh() {
+        photosStateFlow.value = emptyList()
         remote
             .getPhotos()
             .map { photoResponse ->

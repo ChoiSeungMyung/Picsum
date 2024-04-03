@@ -5,11 +5,11 @@ import android.view.ViewGroup
 import com.example.lookpin.base.viewholder.ItemDataBindingViewHolder
 import com.example.lookpin.feature.photolist.BR
 import com.example.lookpin.feature.photolist.databinding.ItemPhotoBinding
-import com.example.lookpin.model.entity.Photo
+import com.example.lookpin.feature.photolist.model.PhotoUiModel
 
 class PhotoItemViewHolder(
-    binding: ItemPhotoBinding,
-) : ItemDataBindingViewHolder<ItemPhotoBinding, Photo>(binding) {
+    val binding: ItemPhotoBinding,
+) : ItemDataBindingViewHolder<ItemPhotoBinding, PhotoUiModel>(binding) {
 
     override fun variableId(): Int = BR.photo
 

@@ -1,13 +1,13 @@
 package com.example.lookpin.feature.photolist.adapter
 
 import android.view.ViewGroup
-import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
-import com.example.lookpin.model.entity.Photo
+import com.example.lookpin.feature.photolist.model.PhotoUiModel
 
 class PhotoListAdapter(
-    private val onChecked: (Photo) -> Unit,
-) : ListAdapter<Photo, PhotoItemViewHolder>(photoDiffUtil) {
+    private val onChecked: (PhotoUiModel) -> Unit,
+    private val onClick: (PhotoUiModel) -> Unit,
+) : ListAdapter<PhotoUiModel, PhotoItemViewHolder>(PhotoUiModel.diffUtil) {
 
     override fun onCreateViewHolder(
         parent: ViewGroup,
@@ -21,18 +21,12 @@ class PhotoListAdapter(
     ) {
         val item = getItem(position)
         holder.bind(item = item)
+
         holder.itemView.setOnClickListener {
+            onClick(item)
+        }
+        holder.binding.checkBox.setOnClickListener {
             onChecked(item)
         }
-    }
-}
-
-private val photoDiffUtil = object : DiffUtil.ItemCallback<Photo>() {
-    override fun areItemsTheSame(oldItem: Photo, newItem: Photo): Boolean {
-        return oldItem.id == newItem.id
-    }
-
-    override fun areContentsTheSame(oldItem: Photo, newItem: Photo): Boolean {
-        return oldItem == newItem
     }
 }
