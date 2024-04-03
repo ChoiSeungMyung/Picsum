@@ -26,6 +26,7 @@ abstract class BaseViewModel<E : ViewEffect> : ViewModel() {
 
     protected fun sendEffect(event: E) {
         _effect.value = event
+        Timber.tag(TAG).d("sendEffect --> $event")
     }
 
     fun clearEffect() {
