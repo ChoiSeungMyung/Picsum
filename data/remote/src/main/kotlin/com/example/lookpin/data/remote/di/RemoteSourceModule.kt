@@ -1,7 +1,7 @@
 package com.example.lookpin.data.remote.di
 
-import com.example.lookpin.data.remote.source.PicsumRemoteSource
-import com.example.lookpin.data.remote.source.impl.PicsumRemoteSourceImpl
+import com.example.lookpin.data.remote.source.PhotoRemoteSource
+import com.example.lookpin.data.remote.source.impl.PhotoRemoteSourceImpl
 import dagger.Binds
 import dagger.Module
 import dagger.hilt.InstallIn
@@ -14,7 +14,7 @@ abstract class RemoteSourceModule {
 
     @Binds
     @Singleton
-    abstract fun bindPicsumRemoteSource(
-        impl: PicsumRemoteSourceImpl,
-    ): PicsumRemoteSource
+    abstract fun bindPhotoRemoteSource(
+        impl: PhotoRemoteSourceImpl,
+    ): PhotoRemoteSource
 }

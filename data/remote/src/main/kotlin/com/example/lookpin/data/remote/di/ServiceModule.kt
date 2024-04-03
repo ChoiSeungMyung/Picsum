@@ -1,6 +1,6 @@
 package com.example.lookpin.data.remote.di
 
-import com.example.lookpin.data.remote.service.PicsumService
+import com.example.lookpin.data.remote.service.PhotoService
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -14,7 +14,7 @@ object ServiceModule {
 
     @Provides
     @Singleton
-    fun providePicsumService(
+    fun providePhotoService(
         retrofit: Retrofit,
-    ): PicsumService = retrofit.create(PicsumService::class.java)
+    ): PhotoService = retrofit.create(PhotoService::class.java)
 }
