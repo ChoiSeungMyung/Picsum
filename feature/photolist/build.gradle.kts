@@ -27,4 +27,5 @@ dependencies {
     implementation(projects.domain)
     implementation(projects.core.base)
     implementation(projects.core.ui)
+    implementation(projects.core.navigation)
 }

@@ -17,9 +17,15 @@ class PhotoListFragment : BaseDataBindingFragment<FragmentPhotoListBinding, Phot
 
     override fun initViews() {
         binding.photoList.adapter =
-            PhotoListAdapter {
-
-            }
+            PhotoListAdapter(
+                onClick = {
+                    val photoId = it.id
+                    (requireActivity() as? Navigation)?.navigateToPhotoDetail(photoId)
+                },
+                onChecked = {
+                    viewModel.checkedPhoto(it)
+                },
+            )
     }
 
     override fun initEffectObserver(effect: PhotoListViewEffect) {
