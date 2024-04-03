@@ -52,7 +52,7 @@ class DefaultPhotoRepository @Inject constructor(
     override fun updatePhoto(photo: Photo) {
         photosStateFlow.getAndUpdate { list ->
             list.map {
-                if (it.id == photo.id) it.copy(checked = !it.checked)
+                if (it.id == photo.id) photo
                 else it
             }
         }

@@ -23,11 +23,14 @@ dependencyResolutionManagement {
 
 rootProject.name = "lookpin"
 include(":app")
-include(":core:domain")
-include(":core:presentation")
+include(":core:base")
+include(":core:ui")
+include(":core:navigation")
 include(":model")
 include(":data")
 include(":data:local")
 include(":data:remote")
 include(":domain")
 include(":presentation")
+include(":feature:photolist")
+include(":feature:photodetail")
