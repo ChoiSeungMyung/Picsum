@@ -7,7 +7,6 @@ plugins {
     id("com.example.lookpin.primitive.android.hilt")
     id("com.example.lookpin.primitive.android.compose")
     id("com.example.lookpin.primitive.android.unitTest")
-    alias(libs.plugins.firebase.crashlytics)
 }
 
 android {
