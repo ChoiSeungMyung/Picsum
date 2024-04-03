@@ -1,7 +1,7 @@
 package com.example.lookpin.data.di
 
-import com.example.lookpin.data.repository.PicsumRepository
-import com.example.lookpin.data.repository.impl.DefaultPicsumRepository
+import com.example.lookpin.data.repository.PhotoRepository
+import com.example.lookpin.data.repository.impl.DefaultPhotoRepository
 import dagger.Binds
 import dagger.Module
 import dagger.hilt.InstallIn
@@ -13,7 +13,7 @@ import javax.inject.Singleton
 abstract class DataModule {
     @Binds
     @Singleton
-    abstract fun bindPicsumRepository(
-        impl: DefaultPicsumRepository,
-    ): PicsumRepository
+    abstract fun bindPhotoRepository(
+        impl: DefaultPhotoRepository,
+    ): PhotoRepository
 }
