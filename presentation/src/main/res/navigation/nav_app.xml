@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_app"
+    app:startDestination="@id/nav_photo_list">
+
+    <include app:graph="@navigation/nav_photo_list" />
+    <action
+        android:id="@+id/action_nav_photo_list"
+        app:destination="@id/nav_photo_list"
+        app:launchSingleTop="true"
+        app:restoreState="false" />
+
+    <include app:graph="@navigation/nav_photo_detail" />
+    <action
+        android:id="@+id/action_nav_photo_detail"
+        app:destination="@id/nav_photo_detail">
+        <argument
+            android:name="photoId"
+            app:argType="string" />
+    </action>
+
+</navigation>
