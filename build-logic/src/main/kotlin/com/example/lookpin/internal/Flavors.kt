@@ -1,4 +1,4 @@
-package com.example.lookpin.internal
+package com.example.picsum.internal
 
 object Flavors {
     const val DEV = "dev"

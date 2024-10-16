@@ -1,14 +1,14 @@
-import com.example.lookpin.primitive.implementation
+import com.example.picsum.primitive.implementation
 
 plugins {
-    id("com.example.lookpin.primitive.android.library")
-    id("com.example.lookpin.primitive.android.kotlin")
-    id("com.example.lookpin.primitive.android.hilt")
-    id("com.example.lookpin.primitive.android.kotlin.ksp")
-    id("com.example.lookpin.primitive.android.navigation")
+    id("com.example.picsum.primitive.android.library")
+    id("com.example.picsum.primitive.android.kotlin")
+    id("com.example.picsum.primitive.android.hilt")
+    id("com.example.picsum.primitive.android.kotlin.ksp")
+    id("com.example.picsum.primitive.android.navigation")
 }
 
-android.namespace = "com.example.lookpin.feature.photolist"
+android.namespace = "com.example.picsum.feature.photolist"
 android.buildFeatures.dataBinding = true
 
 dependencies {

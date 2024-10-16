@@ -8,7 +8,7 @@
 
         <variable
             name="photo"
-            type="com.example.lookpin.feature.photolist.model.PhotoUiModel" />
+            type="com.example.picsum.feature.photolist.model.PhotoUiModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

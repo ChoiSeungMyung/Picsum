@@ -4,7 +4,7 @@ plugins {
     `kotlin-dsl`
 }
 
-group = "com.example.lookpin.buildlogic"
+group = "com.example.picsum.buildlogic"
 
 repositories {
     google()
@@ -33,61 +33,61 @@ dependencies {
 gradlePlugin {
     plugins {
         register("androidApplication") {
-            id = "com.example.lookpin.primitive.android.application"
-            implementationClass = "com.example.lookpin.primitive.AndroidApplicationPlugin"
+            id = "com.example.picsum.primitive.android.application"
+            implementationClass = "com.example.picsum.primitive.AndroidApplicationPlugin"
         }
         register("androidLibrary") {
-            id = "com.example.lookpin.primitive.android.library"
-            implementationClass = "com.example.lookpin.primitive.AndroidLibraryPlugin"
+            id = "com.example.picsum.primitive.android.library"
+            implementationClass = "com.example.picsum.primitive.AndroidLibraryPlugin"
         }
         register("androidProguard") {
-            id = "com.example.lookpin.primitive.android.proguard"
-            implementationClass = "com.example.lookpin.primitive.AndroidProguardPlugin"
+            id = "com.example.picsum.primitive.android.proguard"
+            implementationClass = "com.example.picsum.primitive.AndroidProguardPlugin"
         }
         register("androidUnitTest") {
-            id = "com.example.lookpin.primitive.android.unitTest"
-            implementationClass = "com.example.lookpin.primitive.KotlinUnitTestPlugin"
+            id = "com.example.picsum.primitive.android.unitTest"
+            implementationClass = "com.example.picsum.primitive.KotlinUnitTestPlugin"
         }
         register("androidCompose") {
-            id = "com.example.lookpin.primitive.android.compose"
-            implementationClass = "com.example.lookpin.primitive.AndroidComposePlugin"
+            id = "com.example.picsum.primitive.android.compose"
+            implementationClass = "com.example.picsum.primitive.AndroidComposePlugin"
         }
         register("androidHilt") {
-            id = "com.example.lookpin.primitive.android.hilt"
-            implementationClass = "com.example.lookpin.primitive.AndroidHiltPlugin"
+            id = "com.example.picsum.primitive.android.hilt"
+            implementationClass = "com.example.picsum.primitive.AndroidHiltPlugin"
         }
         register("androidKotlinPlugin") {
-            id = "com.example.lookpin.primitive.android.kotlin"
-            implementationClass = "com.example.lookpin.primitive.AndroidKotlinPlugin"
+            id = "com.example.picsum.primitive.android.kotlin"
+            implementationClass = "com.example.picsum.primitive.AndroidKotlinPlugin"
         }
         register("androidKotlinSerializationPlugin") {
-            id = "com.example.lookpin.primitive.android.kotlin.serialization"
-            implementationClass = "com.example.lookpin.primitive.AndroidKotlinSerializationPlugin"
+            id = "com.example.picsum.primitive.android.kotlin.serialization"
+            implementationClass = "com.example.picsum.primitive.AndroidKotlinSerializationPlugin"
         }
         register("androidKotlinParcelizePlugin") {
-            id = "com.example.lookpin.primitive.android.kotlin.parcelize"
-            implementationClass = "com.example.lookpin.primitive.AndroidKotlinParcelizePlugin"
+            id = "com.example.picsum.primitive.android.kotlin.parcelize"
+            implementationClass = "com.example.picsum.primitive.AndroidKotlinParcelizePlugin"
         }
         register("androidKotlinSymbolPlugin") {
-            id = "com.example.lookpin.primitive.android.kotlin.ksp"
-            implementationClass = "com.example.lookpin.primitive.AndroidKotlinSymbolPlugin"
+            id = "com.example.picsum.primitive.android.kotlin.ksp"
+            implementationClass = "com.example.picsum.primitive.AndroidKotlinSymbolPlugin"
         }
 
         // Navigation
         register("androidNavigation") {
-            id = "com.example.lookpin.primitive.android.navigation"
-            implementationClass = "com.example.lookpin.primitive.AndroidNavigationPlugin"
+            id = "com.example.picsum.primitive.android.navigation"
+            implementationClass = "com.example.picsum.primitive.AndroidNavigationPlugin"
         }
 
         // Conventions
         register("androidFeature") {
-            id = "com.example.lookpin.convention.feature"
-            implementationClass = "com.example.lookpin.convention.AndroidFeaturePlugin"
+            id = "com.example.picsum.convention.feature"
+            implementationClass = "com.example.picsum.convention.AndroidFeaturePlugin"
         }
 
         register("GoogleProtoBuf") {
-            id = "com.example.lookpin.primitive.google.protobuf"
-            implementationClass = "com.example.lookpin.primitive.GoogleProtoBufPlugin"
+            id = "com.example.picsum.primitive.google.protobuf"
+            implementationClass = "com.example.picsum.primitive.GoogleProtoBufPlugin"
         }
     }
 }

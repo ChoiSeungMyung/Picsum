@@ -1,4 +1,4 @@
-package com.example.lookpin.convention
+package com.example.picsum.convention
 
 import org.gradle.api.Plugin
 import org.gradle.api.Project
@@ -9,10 +9,10 @@ class AndroidFeaturePlugin : Plugin<Project> {
     override fun apply(target: Project) {
         with(target) {
             with(pluginManager) {
-                apply("com.example.lookpin.primitive.android.library")
-                apply("com.example.lookpin.primitive.android.kotlin")
-                apply("com.example.lookpin.primitive.android.compose")
-                apply("com.example.lookpin.primitive.android.hilt")
+                apply("com.example.picsum.primitive.android.library")
+                apply("com.example.picsum.primitive.android.kotlin")
+                apply("com.example.picsum.primitive.android.compose")
+                apply("com.example.picsum.primitive.android.hilt")
             }
 
             tasks.withType<KotlinCompile>().configureEach {

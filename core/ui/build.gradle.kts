@@ -1,11 +1,10 @@
 plugins {
-    id("com.example.lookpin.primitive.android.library")
-    id("com.example.lookpin.primitive.android.kotlin")
-    id("com.example.lookpin.primitive.android.kotlin.ksp")
-
+    id("com.example.picsum.primitive.android.library")
+    id("com.example.picsum.primitive.android.kotlin")
+    id("com.example.picsum.primitive.android.kotlin.ksp")
 }
 
-android.namespace = "com.example.lookpin.core.ui"
+android.namespace = "com.example.picsum.core.ui"
 android.buildFeatures.dataBinding = true
 
 dependencies {

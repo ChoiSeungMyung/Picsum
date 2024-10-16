@@ -7,7 +7,7 @@
 
         <variable
             name="vm"
-            type="com.example.lookpin.feature.photolist.PhotoListViewModel" />
+            type="com.example.picsum.feature.photolist.PhotoListViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

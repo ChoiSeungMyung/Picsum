@@ -1,9 +1,9 @@
 plugins {
-    id("com.example.lookpin.primitive.android.library")
-    id("com.example.lookpin.primitive.android.kotlin")
+    id("com.example.picsum.primitive.android.library")
+    id("com.example.picsum.primitive.android.kotlin")
 }
 
-android.namespace = "com.example.lookpin.core.base"
+android.namespace = "com.example.picsum.core.base"
 android.buildFeatures.resValues = false
 android.buildFeatures.dataBinding = true
 

@@ -1,9 +1,9 @@
-package com.example.lookpin.primitive
+package com.example.picsum.primitive
 
 import com.android.build.gradle.LibraryExtension
 import com.android.build.gradle.TestedExtension
 import com.android.build.gradle.internal.dsl.BaseAppModuleExtension
-import com.example.lookpin.internal.isArmProcessor
+import com.example.picsum.internal.isArmProcessor
 import com.google.protobuf.gradle.ProtobufExtension
 import dagger.hilt.android.plugin.HiltExtension
 import org.gradle.api.JavaVersion

@@ -10,11 +10,11 @@
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
-        android:name="com.example.lookpin.App"
+        android:name="com.example.picsum.App"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.lookpin"
+        android:theme="@style/Theme.picsum"
         tools:targetApi="31" />
 
 </manifest>

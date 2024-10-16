@@ -1,7 +1,6 @@
-package com.example.lookpin.internal
+package com.example.picsum.internal
 
 object Version {
-
     val version_code: Int
         get() = (System.currentTimeMillis() / 60000).toInt()
     val version_name: String

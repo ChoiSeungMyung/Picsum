@@ -1,4 +1,4 @@
-package com.example.lookpin.primitive
+package com.example.picsum.primitive
 
 import org.gradle.api.Plugin
 import org.gradle.api.Project

@@ -1,4 +1,4 @@
-# Lookpin - Coding Homework
+# Use Picsum api
 
 - "https://picsum.photos/v2/list" api를 이용해 이미지 리스트를 받아옵니다.
 - response를 이용해 이미지를 그리드 목록으로 보여줍니다.

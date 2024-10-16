@@ -1,4 +1,4 @@
-package com.example.lookpin.internal
+package com.example.picsum.internal
 
 object Dimension {
     const val VERSION = "version"

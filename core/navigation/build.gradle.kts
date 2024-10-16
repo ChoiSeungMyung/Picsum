@@ -1,10 +1,9 @@
 plugins {
-    id("com.example.lookpin.primitive.android.library")
-    id("com.example.lookpin.primitive.android.kotlin")
-
+    id("com.example.picsum.primitive.android.library")
+    id("com.example.picsum.primitive.android.kotlin")
 }
 
-android.namespace = "com.example.lookpin.core.navigation"
+android.namespace = "com.example.picsum.core.navigation"
 
 dependencies {
     implementation(libs.bundles.navigation)

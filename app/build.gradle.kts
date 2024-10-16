@@ -1,16 +1,16 @@
 @Suppress("DSL_SCOPE_VIOLATION")
 plugins {
-    id("com.example.lookpin.primitive.android.application")
-    id("com.example.lookpin.primitive.android.kotlin")
-    id("com.example.lookpin.primitive.android.kotlin.serialization")
-    id("com.example.lookpin.primitive.android.kotlin.parcelize")
-    id("com.example.lookpin.primitive.android.hilt")
-    id("com.example.lookpin.primitive.android.compose")
-    id("com.example.lookpin.primitive.android.unitTest")
+    id("com.example.picsum.primitive.android.application")
+    id("com.example.picsum.primitive.android.kotlin")
+    id("com.example.picsum.primitive.android.kotlin.serialization")
+    id("com.example.picsum.primitive.android.kotlin.parcelize")
+    id("com.example.picsum.primitive.android.hilt")
+    id("com.example.picsum.primitive.android.compose")
+    id("com.example.picsum.primitive.android.unitTest")
 }
 
 android {
-    namespace = "com.example.lookpin"
+    namespace = "com.example.picsum"
 
     buildFeatures {
         this.dataBinding = true

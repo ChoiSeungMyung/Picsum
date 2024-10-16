@@ -1,11 +1,11 @@
 plugins {
-    id("com.example.lookpin.primitive.android.library")
-    id("com.example.lookpin.primitive.android.kotlin")
-    id("com.example.lookpin.primitive.android.kotlin.serialization")
-    id("com.example.lookpin.primitive.android.hilt")
+    id("com.example.picsum.primitive.android.library")
+    id("com.example.picsum.primitive.android.kotlin")
+    id("com.example.picsum.primitive.android.kotlin.serialization")
+    id("com.example.picsum.primitive.android.hilt")
 }
 
-android.namespace = "com.example.lookpin.data.remote"
+android.namespace = "com.example.picsum.data.remote"
 android.buildFeatures.resValues = false
 
 dependencies {

@@ -1,7 +1,7 @@
-package com.example.lookpin.primitive
+package com.example.picsum.primitive
 
-import com.example.lookpin.internal.proguardPath
-import com.example.lookpin.internal.release
+import com.example.picsum.internal.proguardPath
+import com.example.picsum.internal.release
 import org.gradle.api.Plugin
 import org.gradle.api.Project
 

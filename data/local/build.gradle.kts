@@ -1,10 +1,10 @@
 plugins {
-    id("com.example.lookpin.primitive.android.library")
-    id("com.example.lookpin.primitive.android.kotlin")
-    id("com.example.lookpin.primitive.android.hilt")
+    id("com.example.picsum.primitive.android.library")
+    id("com.example.picsum.primitive.android.kotlin")
+    id("com.example.picsum.primitive.android.hilt")
 }
 
-android.namespace = "com.example.lookpin.data.local"
+android.namespace = "com.example.picsum.data.local"
 android.buildFeatures.resValues = false
 
 dependencies {

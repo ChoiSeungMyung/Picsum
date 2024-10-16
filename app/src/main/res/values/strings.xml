@@ -1,4 +1,4 @@
 <resources>
-    <string name="app_name">Lookpin</string>
+    <string name="app_name">Picsum</string>
     <string name="base_url">https://picsum.photos/v2/</string>
 </resources>

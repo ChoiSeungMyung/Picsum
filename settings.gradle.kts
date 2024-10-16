@@ -21,7 +21,7 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "lookpin"
+rootProject.name = "picsum"
 include(":app")
 include(":core:base")
 include(":core:ui")

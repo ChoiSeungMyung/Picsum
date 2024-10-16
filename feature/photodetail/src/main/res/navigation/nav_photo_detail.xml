@@ -6,7 +6,7 @@
 
     <fragment
         android:id="@+id/fragment_photo_detail"
-        android:name="com.example.lookpin.feature.photodetail.PhotoDetailFragment"
+        android:name="com.example.picsum.feature.photodetail.PhotoDetailFragment"
         android:label="@string/feature_photo_detail">
 
         <argument

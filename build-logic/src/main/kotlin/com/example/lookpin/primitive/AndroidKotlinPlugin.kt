@@ -1,4 +1,4 @@
-package com.example.lookpin.primitive
+package com.example.picsum.primitive
 
 import org.gradle.api.JavaVersion
 import org.gradle.api.Plugin
@@ -21,10 +21,11 @@ class AndroidKotlinPlugin : Plugin<Project> {
                 kotlinOptions {
                     jvmTarget = JavaVersion.VERSION_17.toString()
 
-                    freeCompilerArgs = listOf(
-                        "-opt-in=kotlin.RequiresOptIn",
-                        "-Xcontext-receivers",
-                    )
+                    freeCompilerArgs =
+                        listOf(
+                            "-opt-in=kotlin.RequiresOptIn",
+                            "-Xcontext-receivers",
+                        )
                 }
             }
 

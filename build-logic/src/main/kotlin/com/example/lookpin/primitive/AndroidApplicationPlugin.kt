@@ -1,10 +1,10 @@
-package com.example.lookpin.primitive
+package com.example.picsum.primitive
 
-import com.example.lookpin.internal.Dimension
-import com.example.lookpin.internal.Flavors
-import com.example.lookpin.internal.Version
-import com.example.lookpin.internal.debug
-import com.example.lookpin.internal.proguardPath
+import com.example.picsum.internal.Dimension
+import com.example.picsum.internal.Flavors
+import com.example.picsum.internal.Version
+import com.example.picsum.internal.debug
+import com.example.picsum.internal.proguardPath
 import org.gradle.api.Plugin
 import org.gradle.api.Project
 
@@ -21,7 +21,7 @@ class AndroidApplicationPlugin : Plugin<Project> {
                 setupAndroid()
 
                 defaultConfig {
-                    applicationId = "com.example.lookpin"
+                    applicationId = "com.example.picsum"
                     versionCode = Version.version_code
                     versionName = Version.version_name
                     testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"

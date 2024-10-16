@@ -1,4 +1,4 @@
-package com.example.lookpin.internal
+package com.example.picsum.internal
 
 import java.util.Locale
 import java.util.regex.Pattern
@@ -8,7 +8,10 @@ internal object Utils {
 
     fun <T : CharSequence> toCamelCase(string: T?): String? = toCamelCase(string, false)
 
-    fun <T : CharSequence> toCamelCase(string: T?, lower: Boolean): String? {
+    fun <T : CharSequence> toCamelCase(
+        string: T?,
+        lower: Boolean,
+    ): String? {
         if (string == null) {
             return null
         }
@@ -32,11 +35,12 @@ internal object Utils {
             builder.append(chunk)
         }
         var rest = string.subSequence(pos, string.length).toString()
-        rest = if (lower && first) {
-            rest.replaceFirstChar { it.lowercase(Locale.ROOT) }
-        } else {
-            rest.replaceFirstChar { if (it.isLowerCase()) it.titlecase(Locale.ROOT) else it.toString() }
-        }
+        rest =
+            if (lower && first) {
+                rest.replaceFirstChar { it.lowercase(Locale.ROOT) }
+            } else {
+                rest.replaceFirstChar { if (it.isLowerCase()) it.titlecase(Locale.ROOT) else it.toString() }
+            }
         builder.append(rest)
         return builder.toString()
     }
