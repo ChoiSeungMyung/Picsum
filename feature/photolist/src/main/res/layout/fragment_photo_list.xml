@@ -25,7 +25,8 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:spanCount="2"
-            bind:photoList="@{vm.photoUiModels}" />
+            bind:photoList="@{vm.photoUiModels}"
+            bind:listitem="@layout/item_photo" />
 
         <androidx.constraintlayout.widget.Group
             android:id="@+id/success_group"
